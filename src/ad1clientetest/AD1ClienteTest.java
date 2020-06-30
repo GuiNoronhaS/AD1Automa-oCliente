@@ -9,7 +9,7 @@ import ws.unisul.calculator.*;
 public class AD1ClienteTest {
 
     public static void main(String[] args) {
-        
+        try {
         WSCalculadora_Service servico = new WSCalculadora_Service();
         WSCalculadora porta = servico.getWSCalculadoraPort();
         
@@ -48,6 +48,9 @@ public class AD1ClienteTest {
         
         System.out.println("A divisao de " + a  + " e " + b + " é igual a: " + resposta4);
         JOptionPane.showMessageDialog(null, "A divisao de " + a  + " e " + b + " é igual a: " + resposta4);
+        } catch (Exception ex) {
+            System.out.println("Exception: " + ex);
+        }
     }
     
 }
