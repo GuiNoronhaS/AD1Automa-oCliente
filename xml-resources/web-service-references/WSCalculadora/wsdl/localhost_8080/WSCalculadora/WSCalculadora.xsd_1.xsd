@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is Metro/2.4.3 (RELEASE-2.4.3-ad3323c; 2019-01-21T17:46:06+0000) JAXWS-RI/2.3.2 JAXWS-API/2.3.2 JAXB-RI/2.3.2 JAXB-API/2.3.2 git-revision#unknown. --><xs:schema xmlns:tns="http://calculator.unisul.ws/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://calculator.unisul.ws/">
+
+<xs:element name="divisao" type="tns:divisao"/>
+
+<xs:element name="divisaoResponse" type="tns:divisaoResponse"/>
+
+<xs:element name="multiplcacao" type="tns:multiplcacao"/>
+
+<xs:element name="multiplcacaoResponse" type="tns:multiplcacaoResponse"/>
+
+<xs:element name="somar" type="tns:somar"/>
+
+<xs:element name="somarResponse" type="tns:somarResponse"/>
+
+<xs:element name="subtracao" type="tns:subtracao"/>
+
+<xs:element name="subtracaoResponse" type="tns:subtracaoResponse"/>
+
+<xs:complexType name="divisao">
+<xs:sequence>
+<xs:element name="xb" type="xs:double"/>
+<xs:element name="yb" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="divisaoResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="multiplcacao">
+<xs:sequence>
+<xs:element name="xa" type="xs:double"/>
+<xs:element name="xy" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="multiplcacaoResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="subtracao">
+<xs:sequence>
+<xs:element name="a" type="xs:double"/>
+<xs:element name="b" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="subtracaoResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="somar">
+<xs:sequence>
+<xs:element name="x" type="xs:double"/>
+<xs:element name="y" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="somarResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>
